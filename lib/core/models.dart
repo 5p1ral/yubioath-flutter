@@ -89,11 +89,11 @@ enum UsbPid {
   yk4OtpFidoCcid,
   @JsonValue(0x0410)
   ykpOtpFido,
-  @JsonValue(0x42CD)
-  canokeyOtp,
   @JsonValue(0x42CE)
-  canokeyFido,
+  canokeyOtp,
   @JsonValue(0x42CF)
+  canokeyFido,
+  @JsonValue(0x42D0)
   canokeyOtpFido,
   @JsonValue(0x42D1)
   canokeyCcid,
