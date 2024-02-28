@@ -88,7 +88,21 @@ enum UsbPid {
   @JsonValue(0x0407)
   yk4OtpFidoCcid,
   @JsonValue(0x0410)
-  ykpOtpFido;
+  ykpOtpFido,
+  @JsonValue(0x42CD)
+  canokeyOtp,
+  @JsonValue(0x42CE)
+  canokeyFido,
+  @JsonValue(0x42CF)
+  canokeyOtpFido,
+  @JsonValue(0x42D1)
+  canokeyCcid,
+  @JsonValue(0x42D2)
+  canokeyOtpCcid,
+  @JsonValue(0x42D3)
+  canokeyFidoCcid,
+  @JsonValue(0x42D4)
+  canokeyOtpFidoCcid;
 
   int get value => _$UsbPidEnumMap[this]!;
 
