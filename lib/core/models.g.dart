@@ -24,4 +24,11 @@ const _$UsbPidEnumMap = {
   UsbPid.yk4FidoCcid: 1030,
   UsbPid.yk4OtpFidoCcid: 1031,
   UsbPid.ykpOtpFido: 1040,
+  UsbPid.canokeyOtp: 17102,
+  UsbPid.canokeyFido: 17103,
+  UsbPid.canokeyOtpFido: 17104,
+  UsbPid.canokeyCcid: 17105,
+  UsbPid.canokeyOtpCcid: 17106,
+  UsbPid.canokeyFidoCcid: 17107,
+  UsbPid.canokeyOtpFidoCcid: 17108,
 };
