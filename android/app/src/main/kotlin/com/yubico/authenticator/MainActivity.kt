@@ -233,7 +233,7 @@ class MainActivity : FlutterFragmentActivity() {
                 val deviceIterator = usbManager.deviceList.values.iterator()
                 while (deviceIterator.hasNext()) {
                     val device = deviceIterator.next()
-                    if (device.vendorId != 0x421) {
+                    if (device.vendorId == YUBICO_VENDOR_ID || device.vendorId == CANO_VENDOR_ID) {
                         startUsbDiscovery()
                         break
                     }
@@ -322,6 +322,7 @@ class MainActivity : FlutterFragmentActivity() {
 
     companion object {
         const val YUBICO_VENDOR_ID = 4176
+        const val CANO_VENDOR_ID = 8352
         const val FLAG_SECURE = WindowManager.LayoutParams.FLAG_SECURE
     }
 
