@@ -234,11 +234,9 @@ class MainActivity : FlutterFragmentActivity() {
                 while (deviceIterator.hasNext()) {
                     val device = deviceIterator.next()
                     if (device.vendorId != 0x421) {
-                        // the device might not have a USB permission
-                        // it will be requested during during the UsbDiscovery
+                        startUsbDiscovery()
+                        break
                     }
-                    startUsbDiscovery()
-                    break
                 }
             }
         } else {
