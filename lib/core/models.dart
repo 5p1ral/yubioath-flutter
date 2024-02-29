@@ -120,7 +120,7 @@ enum UsbPid {
       UsbPid.yksOtp => 'YubiKey Standard',
       UsbPid.ykpOtpFido => 'YubiKey Plus',
       UsbPid.skyFido => 'Security Key by Yubico',
-      _ => defaultName(),
+      _ => 'Test',
     };
   }
 
