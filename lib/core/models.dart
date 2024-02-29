@@ -108,6 +108,7 @@ enum UsbPid {
 
   String get displayName {
     String defaultName() {
+      return 'CanoKey'
       final prefix = name.startsWith('neo') ? 'YubiKey NEO' : 'YubiKey';
       final suffix = UsbInterface.values
           .where((e) => e.value & usbInterfaces != 0)
@@ -120,7 +121,7 @@ enum UsbPid {
       UsbPid.yksOtp => 'YubiKey Standard',
       UsbPid.ykpOtpFido => 'YubiKey Plus',
       UsbPid.skyFido => 'Security Key by Yubico',
-      _ => 'Test',
+      _ => defaultName(),
     };
   }
 
